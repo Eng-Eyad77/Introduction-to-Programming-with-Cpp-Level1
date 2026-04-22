@@ -8,7 +8,10 @@ int main(){
     int age = 25;
     int totalAge = age + fiveYears;
 
+    // cout << "After " << fiveYears << " years you will be " << age + fiveYears << " years old" << endl;
+
     cout << "After " << fiveYears << " years you will be " << totalAge << " years old" << endl;
+
 
 
     return 0;
