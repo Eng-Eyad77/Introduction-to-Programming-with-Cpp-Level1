@@ -1,9 +1,10 @@
 #include <iostream>
-
+#include <cmath>
 using namespace std;
 // this problem is to calculate Circle Area Inscribed in an Isosceles Triangle
 int main(){
-    float pi = 3.14 ,a,b;
+    float pi = 3.14;
+    double a,b;
 
     cout << "Please enter A: " <<endl;
     cin >> a;
@@ -11,8 +12,8 @@ int main(){
     cout << "Please enter B: " <<endl;
     cin >> b;
 
-    float area =   (pi * ((b * b) / 4)) * ((2 * a - b) / (2 * a + b));
+    float area =   (pi *  pow(b , 2) / 4) * ((2 * a - b) / (2 * a + b));
     
-    cout << "the area of the Circle Area Inscribed in an Isosceles Triangle: " << area << endl;
+    cout << "the area of the Circle Area Inscribed in an Isosceles Triangle: " << floor(area) << endl;
     return 0;
 }
