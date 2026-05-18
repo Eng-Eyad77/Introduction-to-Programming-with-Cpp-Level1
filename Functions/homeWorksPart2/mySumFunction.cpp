@@ -14,6 +14,6 @@ int sumFunction(){
 }
 
 int main (){
-cout << sumFunction() << endl; // if i want to add some of math oprations i can, the function here  like variable 
+cout << sumFunction() << endl; // if i want to add some of math oprations i can, the function here  like variable i can add /3 or ceil or round 
     return 0;
 }
