@@ -1,0 +1,40 @@
+#include<iostream>
+#include <cmath>
+using namespace std;
+
+
+float secondsToDHMS( int totalSeconds)// d-day h-hour m-minutes s-seconds
+{
+    int secondsPerDay =  24 * 60 * 60;
+    int secondsPerHour =   60 * 60;
+    int secondsPerMinute =   60;  
+    
+    
+    cout<< "Enter the total seconds i well conver it to days-hours-minutes-seconds: " << endl;
+    cin >> totalSeconds;
+
+    int numOfDays = totalSeconds / secondsPerDay ;
+    int remainder = totalSeconds % secondsPerDay;
+
+    int numOfHours = remainder / secondsPerHour;
+     remainder = remainder % secondsPerHour;
+
+    int numOfMinutes = remainder / secondsPerMinute;
+     remainder = remainder % secondsPerMinute;
+
+    int numOfSeconds =  remainder;
+    cout << numOfDays << ":" << round(numOfHours) << ":" << round(numOfMinutes) << ":" << round(numOfSeconds)<<endl;
+
+    return 0;
+}
+
+
+int main(){
+    
+    int totalSeconds;
+   
+   secondsToDHMS(totalSeconds);
+
+
+    return 0;
+}
