@@ -19,7 +19,5 @@ int main()
 
     cout << "*************************************************" << endl;
     cout << "The average of grades is: " << avgGrade << endl;
-    
-
     return 0;
 }
