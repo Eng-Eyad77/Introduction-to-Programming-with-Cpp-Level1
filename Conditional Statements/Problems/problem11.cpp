@@ -1,3 +1,5 @@
+// with functions and procedure
+
 #include <iostream>
 using namespace std;
 
@@ -9,20 +11,24 @@ struct strMarks
     int avgMarks;
 
 };
-void ReadMark(strMarks &marks)
+strMarks ReadMark()
 {
-
+    strMarks mar;
     cout << "Please enter your mark1: " <<endl;
-    cin >> marks.mark1;
+    cin >> mar.mark1;
     cout << "Please enter your mark2: " <<endl;
-    cin >> marks.mark2;
+    cin >> mar.mark2;
     cout << "Please enter your mark3: " <<endl;
-    cin >> marks.mark3;
+    cin >> mar.mark3;
+
+    return mar;
 }
 
-void AvgMarks(strMarks &marks)
+strMarks AvgMarks(strMarks Mar)
 {
-    marks.avgMarks = ((marks.mark1 + marks.mark2 + marks.mark3) / 3); 
+    
+    Mar.avgMarks = ((Mar.mark1 + Mar.mark2 + Mar.mark3) / 3); 
+    return Mar;
 }
 
 void PrintMark(strMarks marks)
@@ -41,8 +47,8 @@ void PrintMark(strMarks marks)
 int main()
 {
     strMarks marks;
-    ReadMark(marks);
-    AvgMarks(marks);
+    marks = ReadMark();
+    marks = AvgMarks(marks);
     PrintMark(marks);
     return 0;
 }
