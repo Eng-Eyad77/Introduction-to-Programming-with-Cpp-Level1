@@ -11,15 +11,23 @@ int ReadNumber()
     return number;
 }
 
-
+// int i = n; i >= 1; i = i - 1
 void CalclateNumber(int n)
 {
-        int factorial = 1 ;
-    for(int i = n; i >= 1; i = i - 1)
-    {
-        factorial = factorial * i;
-        
+    int factorial = 1 ;
+
+    while(n < 0){
+
+        cout << "this not a positive number pls enter another one: ";
+        cin >> n;
     }
+
+        while(n >= 1)
+        {
+            factorial = factorial * n;
+            n--;
+        }
+    
     cout << "The factorial of your number is: " << factorial << endl;
     
 }

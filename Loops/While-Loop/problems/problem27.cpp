@@ -14,12 +14,14 @@ int ReadNumber()
 }
 
 
-void CalclateNumber(int n)
+void CalclateNumber(int entredNumber)
 {
 
-    for(int i = n ; i >= 1; i = i - 1)
+    int n = entredNumber;
+    while(n >= 0)
     {
-        cout << i << endl;
+        cout << n << endl;
+        n--;
     }
 }
 

@@ -1,12 +1,9 @@
 #include <iostream>
 using namespace std;
 
-
-
-
 int ReadNumber()
 {
-    cout << "Please enter a number so i make the counter to stop at zero from your number: " ;
+    cout << "Please enter a number so i make the counter stop at your number: " ;
     int number;
     cin >> number;
 
@@ -14,12 +11,13 @@ int ReadNumber()
 }
 
 
-void CalclateNumber(int n)
+void CalclateNumber(int entredNumber)
 {
-
-    for(int i = n ; i >= 1; i = i - 1)
+     int n = 1;
+    while(n <= entredNumber)
     {
-        cout << i << endl;
+        cout << n << endl;
+        n++;
     }
 }
 
